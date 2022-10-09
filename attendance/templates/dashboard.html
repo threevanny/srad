@@ -1,10 +1,42 @@
-{% extends 'attendance/base.html' %}
+{% extends 'base.html' %}
 
 {% block content %}
-  <h1>Dashboard</h1>
-  <p>Cargar programación</p>
-  <p>Descargar reportes</p>
+  <div class="container">
+    <div class="text-center mb-3">
+      <h1>Dashboard</h1>
+      <a href="/admin">Ir a panel de administrador</a>
+    </div>
+    
+    <div class="row">
+      <div class="col-4">
+        <div>
+          <div class="mb-3">
+            <label for="formFile" class="form-label">CARGAR USUARIO</label>
+            <input class="form-control" type="file" id="" accept=".csv, .xlsx">
+            <div id="" class="form-text">Solo se admiten archivos .csv</div>
+          </div>
 
-  <p>Listar Docentes</p>
-  <p>Listar Asignaturas</p>
+          <div class="mb-3">
+            <label for="formFile" class="form-label">CARGAR PROGRAMACIÓN</label>
+            <input class="form-control" type="file" id="" accept=".csv, .xlsx">
+            <div id="" class="form-text">Solo se admiten archivos .csv</div>
+          </div>
+    
+          <div class="mb-3">
+            <label for="">REPORTES</label>
+            <br/>
+            <button class="btn btn-primary">DESCARGAR REPORTES</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-8">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet itaque eos vero. Consectetur minima quibusdam doloremque suscipit aspernatur excepturi, aliquid incidunt nemo quam quasi facilis vitae voluptatibus, iusto deleniti fuga?
+      </div>
+    </div>
+
+
+
+
+ 
+  </div>
 {% endblock %}
